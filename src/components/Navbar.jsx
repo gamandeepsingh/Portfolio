@@ -5,7 +5,7 @@ import { IoCallOutline } from "react-icons/io5";
 import "../style/navbar.css";
 const Navbar = () => {
   return (
-    <div className="navbar w-screen max-w-[560px]  absolute bottom-3 left-[50%] translate-x-[-50%] overflow-visible">
+    <div className="navbar w-screen max-w-[560px]  fixed bottom-[5%] left-[50%] translate-x-[-50%] overflow-visible">
       <div className="flex justify-evenly items-center h-[80px] overflow-visible">
         <div className="tooltip-container overflow-visible">
         <span className="tooltip">Home</span>

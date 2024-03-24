@@ -1,12 +1,13 @@
-import { useEffect } from "react";
-import "./App.css";
-import {Routes, Route} from "react-router-dom"
+import { lazy, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import GLOBE from "vanta/src/vanta.globe";
+import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Contact = lazy(() => import("./pages/Contact"));
+
 
 function App() {
   useEffect(() => {
@@ -23,8 +24,8 @@ function App() {
   }, []);
 
   return (
-    <div className="w-screen h-screen overflow-hidden relative">
-      <div className="bg w-screen h-screen relative" id="vanta">
+    <div className="w-screen h-[100svh] overflow-hidden relative">
+      <div className="bg w-screen h-[100svh] relative" id="vanta">
         <div className="nav-container w-full h-full">
           <Navbar/>
           <Routes>

@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div className="w-[50vw] max-md:w-[100vw] h-full text-white flex flex-col items-start justify-center">
       <div className="flex flex-col items-start gap-8 ml-[20%] ">
-        <p className="text-4xl max-md:text-3xl font-light">Hello Geeky!</p>
+        <p className="text-4xl max-md:text-3xl font-extrabold ">Hello Geeky!</p>
         <div className="flex flex-col gap-1">
           <span className="text-lg max-md:text-sm font-bold">I&apos;m </span>
           <span
