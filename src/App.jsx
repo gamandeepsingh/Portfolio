@@ -18,16 +18,16 @@ function App() {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 200.0,
+      minHeight: 400.0,
       minWidth: 200.0,
       scale: 1.0,
-      scaleMobile: 1.0,
+      scaleMobile: 0.5,
     });
   }, []);
 
   return (
-    <div className="w-screen h-[100svh] overflow-hidden relative">
-      <div className="bg w-screen h-[100svh] relative" id="vanta">
+    <div className="w-screen min-h-[100svh] h-full overflow-hidden relative bg-[#23153C]">
+      <div className="bg w-screen min-h-[100svh] h-full relative" id="vanta">
         <div className="nav-container w-full h-full">
           <Navbar path={pathname}/>
           <Routes>

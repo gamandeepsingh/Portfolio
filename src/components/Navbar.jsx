@@ -7,7 +7,7 @@ import "../style/navbar.css";
 // eslint-disable-next-line react/prop-types
 const Navbar = ({path}) => {
   return (
-    <div className="navbar w-screen max-w-[560px]  fixed bottom-[5%] left-[50%] translate-x-[-50%] overflow-visible">
+    <div className="navbar w-screen max-w-[560px]  fixed bottom-[5%] left-[50%] translate-x-[-50%] overflow-visible z-[999]">
       <div className="flex justify-evenly items-center h-[80px] overflow-visible">
         <div className={`tooltip-container overflow-visible p-2 ${path==="/" ? "bg-pink-500 rounded-full" :""}`}>
         <span className="tooltip">Home</span>

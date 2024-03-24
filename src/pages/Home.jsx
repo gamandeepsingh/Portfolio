@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "../style/home.css"
+import Profile from "../components/Profile";
 const Home = () => {
   const el = useRef(null);
 
@@ -19,8 +20,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-[50vw] max-md:w-[100vw] h-full text-white flex flex-col items-start justify-center">
-      <div className="flex flex-col items-start gap-8 ml-[20%] ">
+    <div className="w-screen min-h-[100svh] h-full flex max-md:flex-col-reverse justify-center items-center">
+      <div className="w-[50vw] max-md:w-[100vw] h-full text-white flex flex-col items-start justify-center">
+      <div className="flex flex-col items-start gap-8 ml-[20%] max-md:mb-[150px]">
         <p className="text-4xl max-md:text-3xl font-extrabold ">Hello Geeky!</p>
         <div className="flex flex-col gap-1">
           <span className="text-lg max-md:text-sm font-bold">I&apos;m </span>
@@ -43,6 +45,10 @@ const Home = () => {
         </button>
         </a>
       </div>
+    </div>
+    <div className="flex h-full  w-[40vw] max-md:w-screen -z-20 justify-center items-center">
+      <Profile/>
+    </div>
     </div>
   );
 };
