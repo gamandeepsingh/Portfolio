@@ -1,5 +1,5 @@
 import { lazy, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,useLocation } from "react-router-dom";
 import GLOBE from "vanta/src/vanta.globe";
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -10,6 +10,8 @@ const Contact = lazy(() => import("./pages/Contact"));
 
 
 function App() {
+  const {pathname} = useLocation()
+  console.log(pathname);
   useEffect(() => {
     GLOBE({
       el: "#vanta",
@@ -27,7 +29,7 @@ function App() {
     <div className="w-screen h-[100svh] overflow-hidden relative">
       <div className="bg w-screen h-[100svh] relative" id="vanta">
         <div className="nav-container w-full h-full">
-          <Navbar/>
+          <Navbar path={pathname}/>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
