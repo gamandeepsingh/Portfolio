@@ -1,9 +1,14 @@
-import gif from '../assets/G.gif'
 const Loader = () => {
   return (
-    <div>
-      <img src={gif} alt="Loader" />
-      {/* loadinng.......... */}
+    <div className="loader w-screen h-screen flex justify-center items-center">
+      <div class="wrapper">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+</div>
     </div>
   )
 }

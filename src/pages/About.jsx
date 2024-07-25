@@ -10,7 +10,7 @@ const About = () => {
         </p>
       </div>
       {/* right */}
-      <div className="about flex flex-col justify-center items-center h-full w-screen">
+      <div className="w-1/3 mt-8 about flex flex-col justify-center items-center h-full ">
 
         <div className="relative h-full w-full flex items-center justify-center">
           <div className="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
