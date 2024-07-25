@@ -2,12 +2,13 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "../style/home.css"
 import Profile from "../components/Profile";
+
 const Home = () => {
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["<i>Gamandeep Singh</i>", "MERN Stack Developer"],
+      strings: ["<i>Gamandeep Singh</i>", "a MERN stack developer","an open source contributor"],
       typeSpeed: 100,
       backSpeed: 50,
       loop: true,
@@ -31,7 +32,7 @@ const Home = () => {
             className="text-6xl max-md:text-5xl max-sm:text-4xl -ml-2 pointer-events-none font-extrabold min-h-[100px] cursor-none"
           />
         </div>
-        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:a4806244-5347-456a-8e3a-e971334e9d19">
+        <a href="https://drive.google.com/file/d/1JNAZDA9M5FoM8I3oHMmJtzL2H8URFtNt/view?usp=sharing">
         <button className="btn-53 px-[3rem] py-[1.2rem] max-md:px-[2prem] max-md:py-[0.8rem] max-sm:text-sm max-sm:px-[1rem] max-sm:py-[0.8rem]">
           <div className="original font-extrabold">RESUME</div>
           <div className="letters">

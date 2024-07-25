@@ -5,7 +5,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-
+import img from "../assets/me.jpeg"
 const Profile = () => {
   return (
     <div className="grid w-full place-content-center px-4 py-12 text-slate-900">
@@ -69,7 +69,7 @@ const TiltCard = () => {
         }}
         className="absolute inset-4 grid place-content-center rounded-full bg-white shadow-lg object-contain"
       >
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Z9v0fkrELz6hIsfVq4fTuDTGnSwerp1cT1XHm625vw&s"
+            <img src={img}
             className="object-cover w-64 h-64 rounded-full  max-md:h-56 max-md:w-56"
             alt="" />
       </div>
