@@ -2,38 +2,69 @@ import ProjectCard from "../components/ProjectCard"
 const projectsData = [
   {
     id: 1,
-    title: "INNOGEEKS",
-    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902018/Screenshot_from_2024-07-25_15-36-27_c1z2rf.png",
-    types: ["ReactJS", "Framer Motion"],
-    link:"https://innogeeks-site.vercel.app/"
+    title: "PRISTINE - UI Library",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732798427/eyopllzjgi2pisz4psgl.png",
+    types: ["ReactJS", "Framer Motion", "Tailwind CSS", "Docusaurus","mdx"],
+    link:"https://pristine-website.vercel.app/"
   },
   {
     id: 2,
-    title: "SAIMLDS",
-    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902176/Screenshot_from_2024-07-25_15-39-22_vhiera.png",
-    types: ["MERN Stack","FIREBASE"],
-    link:"https://saimlds.in/"
+    title: "PRISTINE MVP",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732798544/ryrynggdgbcag3nokkh0.png",
+    types: ["ReactJS", "Framer Motion", "GSAP", "Tailwind CSS", "NODEJS"],
+    link:"https://pristine-weld.vercel.app/"
   },
   {
     id: 3,
-    title: "DINE ME",
-    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902269/Screenshot_from_2024-07-25_15-40-34_ttfxgh.png",
-    types: ["MERN Stack"],
-    link:"https://project01-swart-phi.vercel.app/"
+    title: "Calendso",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732811067/mh8w8c1ewzotvormhuoy.png",
+    types: ["NEXT JS", "React JS", "Clerk", "GCP-Calendar API"],
+    link:"https://calendso-ebon.vercel.app/",
+    github:"https://github.com/gamandeepsingh/Calendso"
   },
   {
     id: 4,
+    title: "INNOGEEKS",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902018/Screenshot_from_2024-07-25_15-36-27_c1z2rf.png",
+    types: ["ReactJS", "Framer Motion", "Tailwind CSS"],
+    link:"https://innogeeks-site.vercel.app/"
+  },
+  {
+    id: 5,
+    title: "SAIMLDS",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902176/Screenshot_from_2024-07-25_15-39-22_vhiera.png",
+    types: ["MERN Stack","FIREBASE", "Node JS","ExpressJS"],
+    link:"https://saimlds.in/"
+  },
+  {
+    id: 6,
+    title: "DINE ME",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902269/Screenshot_from_2024-07-25_15-40-34_ttfxgh.png",
+    types: ["MERN Stack"],
+    link:"https://dineme.vercel.app/",
+    github:"https://github.com/gamandeepsingh/Project01"
+  },
+  {
+    id: 7,
     title: "Assets Roster",
-    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902708/Screenshot_from_2024-07-25_15-47-45_lq2ywa.png",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732810856/qtasvipme3hgih7psdwq.png",
     types: ["MERN Stack","Frame Motion"],
     link:"https://www.assetsroster.com/"
-  },
+  },  
+  {
+    id: 8,
+    title: "Portfolio",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732811266/x0yndhuv6cgj4dq7tnpa.png",
+    types: ["MERN Stack","Vanta JS", "GSAP"],
+    link:"https://gamandeep.vercel.app/",
+    github:"https://github.com/gamandeepsingh/Portfolio"
+  },  
   
 ];
 
 const Projects = () => {
   return (
-    <div className="project_container flex w-screen justify-center items-center flex-col">
+    <div className="project_container flex w-screen overflow-x-hidden justify-center items-center flex-col">
       {/* TERMINAL */}
       <div className="card">
         <div className="wrap">
@@ -85,14 +116,14 @@ const Projects = () => {
             <div className="body">
               <pre className="pre">          <code>-&nbsp;</code>
                 <code>npx&nbsp;</code>
-                <code className="cmd" data-cmd="create-project@latest"></code>
+                <code className="cmd" data-cmd="show-project@latest"></code>
               </pre>
             </div>
           </div>
         </div>
       </div>
       {/* MAIN SECTION */}
-      <div className="about_section mt-10 flex flex-wrap gap-10 max-w-[1280px] justify-center mb-56">
+      <div className=" mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 max-w-[1280px] justify-center mb-56">
         {projectsData.map((project) => (
           <ProjectCard
             key={project.id}
@@ -100,6 +131,7 @@ const Projects = () => {
             img={project.img}
             types={project.types}
             link={project.link}
+            github={project?.github}
           />
         ))}
       </div>

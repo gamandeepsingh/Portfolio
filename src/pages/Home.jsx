@@ -32,7 +32,7 @@ const Home = () => {
             className="text-6xl max-md:text-5xl max-sm:text-4xl -ml-2 pointer-events-none font-extrabold min-h-[100px] cursor-none"
           />
         </div>
-        <a href="https://drive.google.com/file/d/1JNAZDA9M5FoM8I3oHMmJtzL2H8URFtNt/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/1y3NNm2JGm2ZIegtugMmabL0sC0xlYY5l/view?usp=sharing" target="_blank">
         <button className="btn-53 px-[3rem] py-[1.2rem] max-md:px-[2prem] max-md:py-[0.8rem] max-sm:text-sm max-sm:px-[1rem] max-sm:py-[0.8rem]">
           <div className="original font-extrabold">RESUME</div>
           <div className="letters">
