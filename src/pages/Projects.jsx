@@ -2,20 +2,41 @@ import ProjectCard from "../components/ProjectCard"
 const projectsData = [
   {
     id: 1,
-    title: "PRISTINE - UI Library",
-    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732798427/eyopllzjgi2pisz4psgl.png",
-    types: ["ReactJS", "Framer Motion", "Tailwind CSS", "Docusaurus","mdx"],
-    link:"https://pristine-website.vercel.app/"
+    title: "Listerji",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1740937680/Screenshot_2025-03-02_231711_kpqcwf.png",
+    types: ["ReactJS", "Razorpay", "Redis", "ExpressJS"],
+    link:"https://www.listerji.com/"
   },
   {
     id: 2,
+    title: "Storenv",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1740937701/Screenshot_2025-03-02_231811_dettf6.png",
+    types: ["NextJS", "NextAuth.js", "CryptoJS", "MongoDB"],
+    link:"https://storenv.vercel.app/"
+  },
+  {
+    id: 3,
+    title: "PRISTINE - UI Library",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732798427/eyopllzjgi2pisz4psgl.png",
+    types: ["ReactJS", "Framer Motion", "Tailwind CSS", "Docusaurus","mdx"],
+    link:"https://storenv.vercel.app/"
+  },
+  {
+    id: 4,
+    title: "Paybursement",
+    img: "https://res.cloudinary.com/dib0peewu/image/upload/v1740937728/Screenshot_2025-03-02_231839_wljvf5.png",
+    types: ["NextJS", "Razorpay", "Clerk", "MongoDB"],
+    link:"https://paybursement.xyz/"
+  },
+  {
+    id: 5,
     title: "PRISTINE MVP",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732798544/ryrynggdgbcag3nokkh0.png",
     types: ["ReactJS", "Framer Motion", "GSAP", "Tailwind CSS", "NODEJS"],
     link:"https://pristine-weld.vercel.app/"
   },
   {
-    id: 3,
+    id: 6,
     title: "Calendso",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732811067/mh8w8c1ewzotvormhuoy.png",
     types: ["NEXT JS", "React JS", "Clerk", "GCP-Calendar API"],
@@ -23,21 +44,21 @@ const projectsData = [
     github:"https://github.com/gamandeepsingh/Calendso"
   },
   {
-    id: 4,
+    id: 7,
     title: "INNOGEEKS",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902018/Screenshot_from_2024-07-25_15-36-27_c1z2rf.png",
     types: ["ReactJS", "Framer Motion", "Tailwind CSS"],
     link:"https://innogeeks-site.vercel.app/"
   },
   {
-    id: 5,
+    id: 8,
     title: "SAIMLDS",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902176/Screenshot_from_2024-07-25_15-39-22_vhiera.png",
     types: ["MERN Stack","FIREBASE", "Node JS","ExpressJS"],
     link:"https://saimlds.in/"
   },
   {
-    id: 6,
+    id: 9,
     title: "DINE ME",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1721902269/Screenshot_from_2024-07-25_15-40-34_ttfxgh.png",
     types: ["MERN Stack"],
@@ -45,14 +66,14 @@ const projectsData = [
     github:"https://github.com/gamandeepsingh/Project01"
   },
   {
-    id: 7,
+    id: 10,
     title: "Assets Roster",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732810856/qtasvipme3hgih7psdwq.png",
     types: ["MERN Stack","Frame Motion"],
     link:"https://www.assetsroster.com/"
   },  
   {
-    id: 8,
+    id: 11,
     title: "Portfolio",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732811266/x0yndhuv6cgj4dq7tnpa.png",
     types: ["MERN Stack","Vanta JS", "GSAP"],
