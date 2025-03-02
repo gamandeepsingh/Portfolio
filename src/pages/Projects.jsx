@@ -12,7 +12,8 @@ const projectsData = [
     title: "Storenv",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1740937701/Screenshot_2025-03-02_231811_dettf6.png",
     types: ["NextJS", "NextAuth.js", "CryptoJS", "MongoDB"],
-    link:"https://storenv.vercel.app/"
+    link:"https://storenv.vercel.app/",
+    github:"https://github.com/gamandeepsingh/Storenv"
   },
   {
     id: 3,
@@ -26,7 +27,8 @@ const projectsData = [
     title: "Paybursement",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1740937728/Screenshot_2025-03-02_231839_wljvf5.png",
     types: ["NextJS", "Razorpay", "Clerk", "MongoDB"],
-    link:"https://paybursement.xyz/"
+    link:"https://paybursement.xyz/",
+    github:"https://github.com/gamandeepsingh/paybursement"
   },
   {
     id: 5,
