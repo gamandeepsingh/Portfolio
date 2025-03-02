@@ -19,7 +19,7 @@ const projectsData = [
     title: "PRISTINE - UI Library",
     img: "https://res.cloudinary.com/dib0peewu/image/upload/v1732798427/eyopllzjgi2pisz4psgl.png",
     types: ["ReactJS", "Framer Motion", "Tailwind CSS", "Docusaurus","mdx"],
-    link:"https://storenv.vercel.app/"
+    link:"https://www.pristineui.com/"
   },
   {
     id: 4,
